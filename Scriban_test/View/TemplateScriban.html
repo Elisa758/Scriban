@@ -1,0 +1,21 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title>Products</title>
+
+</head>
+<body>
+    
+    <ul id='products'>
+        {{ for product in products }}
+        <li>
+            <h2>{{ product.name }}</h2>
+            Price: {{ product.price }}
+        </li>
+        {{ end }}
+    </ul>
+    
+</body>
+</html>
