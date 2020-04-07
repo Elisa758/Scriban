@@ -12,12 +12,11 @@ namespace Scriban_test
 
         public static void WriteProducts(string message)
         {
-            TextWriter textWrite = new StreamWriter(@"..\netcoreapp3.1\products.txt");
+            TextWriter textWrite = new StreamWriter(@"..\netcoreapp3.1\products.html");
             textWrite.Write(message);
             textWrite.Flush();
             textWrite.Close();
             textWrite = null;
-
         }
 
 

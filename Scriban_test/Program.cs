@@ -32,9 +32,12 @@ namespace Scriban_test
             }
 
             List<Product> ProductList = GetProducts();
+
             var html = ReadFile("C:/Users/Student/source/repos/Scriban_test/Scriban_test/View/TemplateScriban.html");
             var template = Template.Parse(html);
+
             var result = template.Render(new { Products = ProductList });
+
             ProductController.WriteProducts(result);
 
         }
